@@ -1,0 +1,8 @@
+@import "/index.css";
+
+.wishlisted {
+  color: var(--danger-color);
+}
+.card-width {
+  margin: 0;
+}
