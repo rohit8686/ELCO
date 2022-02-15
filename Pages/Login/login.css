@@ -1,0 +1,12 @@
+@import "/index.css";
+
+.input,
+.full-width {
+  width: 100%;
+}
+.text-info {
+  color: var(--info-color);
+}
+.p-2 {
+  padding: 2rem;
+}
