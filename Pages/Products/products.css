@@ -1,0 +1,91 @@
+@import "/index.css";
+
+body {
+  width: 100%;
+}
+.nav {
+  padding: 1rem;
+}
+.aside-filter {
+  width: 20%;
+  height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+.main-content {
+  width: 78%;
+  height: 90vh;
+  overflow-y: auto;
+}
+.no-gap {
+  gap: 0;
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--danger-color);
+  cursor: pointer;
+}
+.card-width,
+.cart-btn {
+  width: 300px;
+  margin: 0;
+}
+
+@media screen and (max-width: 830px) {
+  html {
+    font-size: 70%;
+  }
+  .aside-filter {
+    width: 25%;
+  }
+  .card-width,
+  .cart-btn {
+    width: 200px;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 60%;
+  }
+  .aside-filter {
+    width: 30%;
+  }
+  .card-width,
+  .cart-btn {
+    width: 200px;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .search {
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .aside-filter {
+    width: 35%;
+  }
+  .card-width,
+  .cart-btn {
+    width: 170px;
+  }
+}
