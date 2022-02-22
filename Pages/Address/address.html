@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="address.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+    <title>Address</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav flex space-between">
+        <a href="/index.html" class="link">
+          <h1 class="gradient-text title">Eleco</h1>
+        </a>
+        <div class="flex">
+          <div class="input-border flex">
+            <span class="material-icons span icon icon-size"> search </span>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              class="search"
+              placeholder="Search"
+            />
+          </div>
+          <a href="/Pages/Login/login.html">
+            <button class="btn btn-error">Logout</button>
+          </a>
+          <a href="/Pages/Wishlist/wishlist.html" class="link">
+            <div class="badge">
+              <span class="material-icons span icon icon-size">
+                favorite_border
+              </span>
+              <div class="number status flex busy">5</div>
+            </div>
+          </a>
+          <a href="/Pages/Cart/cart.html" class="link">
+            <div class="badge">
+              <span class="material-icons-outlined span icon icon-size">
+                shopping_cart
+              </span>
+              <div class="number status flex busy">5</div>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="text-center">Manage Address</h2>
+    <div class="underline"></div>
+    <div class="card card-width p-1">
+      <div class="flex space-between">
+        <h3>Home Address</h3>
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <hr class="hr" />
+      <p>
+        D No : 11-2/33, Plot : 243, Behind Railway School, Visakhapatnam, Andhra
+        Pradesh.
+      </p>
+      <p class="pt-1">Pincode :<strong> 530199</strong></p>
+      <p class="pt-1">Phone : <strong>9249348953</strong></p>
+      <p class="pt-1">Email : <strong>qwerty@gmail.com</strong></p>
+      <div class="flex space-between pt-1">
+        <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-error">Delete</button>
+      </div>
+    </div>
+
+    <h2 class="text-center">Add New Address</h2>
+    <div class="underline"></div>
+    <div class="card card-width p-1">
+      <h3 class="text-center">New Address</h3>
+      <hr class="hr" />
+      <form onsubmit="return false">
+        <label for="name">Name :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input"
+          placeholder="Rohit"
+          required
+        />
+
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="abcd@gmail.com"
+          required
+        />
+
+        <label for="phone">Phone :</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          class="input"
+          placeholder="9102392398"
+          required
+        />
+
+        <label for="address">Address Type : </label>
+        <select name="address" id="address" class="input" required>
+          <option value=""></option>
+          <option value="">Home</option>
+          <option value="">Office</option>
+          <option value="">Other</option>
+        </select>
+
+        <label for="dob">DOB :</label>
+        <input type="date" name="dob" id="dob" class="input" required />
+
+        <label for="house-no">House number :</label>
+        <input
+          type="text"
+          name="house-no"
+          id="house-no"
+          class="input"
+          placeholder="12-45/2"
+        />
+
+        <label for="city">City :</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          class="input"
+          placeholder="Vizag"
+          required
+        />
+
+        <label for="state">State :</label>
+        <input
+          type="text"
+          name="state"
+          id="state"
+          class="input"
+          placeholder="Andhra Pradesh"
+          required
+        />
+
+        <label for="pincode">Pincode :</label>
+        <input
+          type="text"
+          name="pincode"
+          id="pincode"
+          class="input"
+          placeholder="524441"
+          required
+        />
+
+        <div class="flex pt-1">
+          <button class="btn btn-primary">Add Address</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
